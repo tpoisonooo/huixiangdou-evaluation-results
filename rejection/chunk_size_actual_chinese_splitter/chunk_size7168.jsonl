@@ -1,0 +1,3 @@
+{"chunk_size": 7168, "throttle": 0.3, "precision": 0.5021, "recall": 0.9358, "f1": 0.6536}
+{"chunk_size": 7168, "throttle": 0.4, "precision": 0.7143, "recall": 0.7433, "f1": 0.7285}
+{"chunk_size": 7168, "throttle": 0.5, "precision": 0.8698, "recall": 0.2926, "f1": 0.4379}

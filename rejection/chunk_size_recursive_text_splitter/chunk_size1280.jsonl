@@ -1,0 +1,9 @@
+{"chunk_size": 1280, "throttle": 0.1, "precision": 0.293, "recall": 0.9953, "f1": 0.4527}
+{"chunk_size": 1280, "throttle": 0.1, "precision": 0.293, "recall": 0.9953, "f1": 0.4527}
+{"chunk_size": 1280, "throttle": 0.2, "precision": 0.3456, "recall": 0.9875, "f1": 0.512}
+{"chunk_size": 1280, "throttle": 0.3, "precision": 0.4771, "recall": 0.9609, "f1": 0.6376}
+{"chunk_size": 1280, "throttle": 0.4, "precision": 0.6905, "recall": 0.8169, "f1": 0.7484}
+{"chunk_size": 1280, "throttle": 0.5, "precision": 0.8772, "recall": 0.3912, "f1": 0.5411}
+{"chunk_size": 1280, "throttle": 0.6, "precision": 0.8913, "recall": 0.0642, "f1": 0.1197}
+{"chunk_size": 1280, "throttle": 0.7, "precision": 1.0, "recall": 0.0031, "f1": 0.0062}
+{"chunk_size": 1280, "throttle": 0.8, "precision": 0.0, "recall": 0.0, "f1": 0.0}
