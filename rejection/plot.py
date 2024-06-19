@@ -179,5 +179,39 @@ def plot_recursive_text_splitter_hist():
     # 显示图形
     plt.show()
 
+def classification():
+    import numpy as np
+    import matplotlib.pyplot as plt
+    from sklearn.datasets import make_blobs
+    from sklearn.linear_model import LogisticRegression
+
+    # 生成更均匀分布的数据点
+    X, y = make_blobs(n_samples=200, centers=2, cluster_std=2.0, random_state=42)
+
+    # 将数据分为红色点和蓝色点
+    red_x, red_y = X[y == 0], y[y == 0]
+    blue_x, blue_y = X[y == 1], y[y == 1]
+
+    # 绘制红色点
+    plt.scatter(red_x[:, 0], red_x[:, 1], c='green', label='Positive')
+
+    # 绘制蓝色点
+    plt.scatter(blue_x[:, 0], blue_x[:, 1], c='pink', label='Negative')
+
+    # 使用逻辑回归来找到决策边界
+    model = LogisticRegression()
+    model.fit(X, y)
+
+    # 绘制决策边界
+    x_vals = np.linspace(-10, 10, 100).reshape(100, 1)
+    y_vals = model.coef_[0][0] * x_vals + model.intercept_[0]
+    plt.plot(x_vals, y_vals, c='black', label='Throttle')
+
+    # 添加图例
+    plt.legend()
+
+    # 显示图表
+    plt.show()
+
 if __name__ == '__main__':
-    plot_3d()
+    classification()
